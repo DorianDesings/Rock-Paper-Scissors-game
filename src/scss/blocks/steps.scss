@@ -1,0 +1,22 @@
+.first-step {
+  display: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/bg-triangle.svg);
+
+  &--show {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+  }
+}
+
+.second-step {
+  display: none;
+
+  &--show {
+    display: flex;
+    justify-content: space-between;
+  }
+}
