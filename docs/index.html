@@ -16,104 +16,21 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="score">
-        <span class="score__title">YOU</span>
-        <span id="points-user" class="score__points">0</span>
+    <div class="home-container">
+      <div class="game-modes">
+        <a href="simple.html">
+          <div class="game-modes__item">
+            <img src="assets/images/image-rules.svg" alt="" />
+            <span>SIMPLE MODE</span>
+          </div>
+        </a>
+        <a href="advanced.html">
+          <div class="game-modes__item">
+            <img src="assets/images/image-rules-bonus.svg" alt="" />
+            <span>ADVANCED MODE</span>
+          </div>
+        </a>
       </div>
-      <div class="logo">
-        <span class="block">ROCK</span>
-        <span class="block">PAPER</span>
-        <span class="block">SCISSORS</span>
-      </div>
-      <div class="score">
-        <span class="score__title">PC</span>
-        <span id="points-pc" class="score__points">0</span>
-      </div>
-    </header>
-    <main id="main" class="main main--first-step">
-      <div id="first-step" class="first-step first-step--show">
-        <div class="game-item game-item--blue">
-          <img
-            class="game-item__image"
-            src="assets/images/icon-paper.svg"
-            alt="paper image"
-            data-element="paper"
-          />
-        </div>
-        <div class="game-item game-item--yellow">
-          <img
-            class="game-item__image"
-            src="assets/images/icon-scissors.svg"
-            alt="scissors image"
-            data-element="scissors"
-          />
-        </div>
-        <div class="game-item game-item--red">
-          <img
-            class="game-item__image"
-            src="assets/images/icon-rock.svg"
-            alt="rock image"
-            data-element="rock"
-          />
-        </div>
-      </div>
-      <div id="second-step" class="second-step">
-        <div class="option-container">
-          <h2 class="option-title">Your Picked</h2>
-          <div id="paper-user" class="game-item game-item--blue">
-            <img
-              class="game-item__image"
-              src="assets/images/icon-paper.svg"
-              alt=""
-            />
-          </div>
-          <div id="scissors-user" class="game-item game-item--yellow">
-            <img
-              class="game-item__image"
-              src="assets/images/icon-scissors.svg"
-              alt=""
-            />
-          </div>
-          <div id="rock-user" class="game-item game-item--red">
-            <img
-              class="game-item__image"
-              src="assets/images/icon-rock.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="game-result-container">
-          <h2 id="game-result" class="game-result">YOU WIN</h2>
-          <button id="play-again" class="game-button">PLAY AGAIN</button>
-        </div>
-        <div class="option-container">
-          <h2 class="option-title">The PC picked</h2>
-          <div id="paper-pc" class="game-item game-item--blue">
-            <img
-              class="game-item__image"
-              src="assets/images/icon-paper.svg"
-              alt=""
-            />
-          </div>
-          <div id="scissors-pc" class="game-item game-item--yellow">
-            <img
-              class="game-item__image"
-              src="assets/images/icon-scissors.svg"
-              alt=""
-            />
-          </div>
-          <div id="rock-pc" class="game-item game-item--red">
-            <img
-              class="game-item__image"
-              src="assets/images/icon-rock.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer"></footer>
-    <script src="js/scripts.js"></script>
+    </div>
   </body>
 </html>

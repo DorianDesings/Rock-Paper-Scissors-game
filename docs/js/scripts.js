@@ -10,20 +10,38 @@ const gameResultElement = document.getElementById('game-result');
 
 const playAgainElement = document.getElementById('play-again');
 
+const GAME_MODE = document.body.dataset.gameMode;
 const GAME_OPTIONS = ['rock', 'scissors', 'paper'];
-
 const GAME_RULES = {
   rock: {
+    paper: false,
     scissors: true,
-    paper: false
+    lizard: true,
+    spock: false
   },
   scissors: {
     rock: false,
-    paper: true
+    paper: true,
+    lizard: true,
+    spock: false
   },
   paper: {
+    rock: true,
     scissors: false,
-    rock: true
+    lizard: false,
+    spock: true
+  },
+  lizard: {
+    rock: false,
+    paper: true,
+    scissors: false,
+    spock: true
+  },
+  spock: {
+    rock: true,
+    paper: false,
+    scissors: true,
+    lizard: false
   }
 };
 
@@ -32,6 +50,10 @@ let pointsUser = 0;
 let pointsPc = 0;
 let userIcon;
 let pcIcon;
+
+if (GAME_MODE === 'advanced') {
+  GAME_OPTIONS.push('lizard', 'spock');
+}
 
 const resetGame = () => {
   userIcon.classList.remove('game-item--show');
