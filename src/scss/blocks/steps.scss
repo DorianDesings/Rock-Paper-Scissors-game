@@ -2,13 +2,25 @@
   display: none;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../assets/images/bg-triangle.svg);
+
+  &--simple {
+    background-image: url(../assets/images/bg-triangle.svg);
+  }
+
+  &--advanced {
+    background-image: url(../assets/images/bg-pentagon.svg);
+  }
 
   &--show {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3.5rem;
+  }
+
+  &--advanced.first-step--show {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 

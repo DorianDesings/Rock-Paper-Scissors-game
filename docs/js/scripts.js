@@ -12,6 +12,7 @@ const playAgainElement = document.getElementById('play-again');
 
 const GAME_MODE = document.body.dataset.gameMode;
 const GAME_OPTIONS = ['rock', 'scissors', 'paper'];
+
 const GAME_RULES = {
   rock: {
     paper: false,

@@ -22,19 +22,29 @@
     }
   }
 
-  &--blue {
-    --border-color: hsl(230, 89%, 65%);
-    --shadow: #2a45c2;
+  &--paper {
+    --border-color: var(--paper);
+    --shadow: var(--paper-shadow);
   }
 
-  &--yellow {
-    --border-color: #eb9f0e;
-    --shadow: #c76c1b;
+  &--scissors {
+    --border-color: var(--scissors);
+    --shadow: var(--scissors-shadow);
   }
 
-  &--red {
-    --border-color: #db2e4d;
-    --shadow: #9d1634;
+  &--rock {
+    --border-color: var(--rock);
+    --shadow: var(--rock-shadow);
+  }
+
+  &--lizard {
+    --border-color: var(--lizard);
+    --shadow: var(--lizard-shadow);
+  }
+
+  &--spock {
+    --border-color: var(--spock);
+    --shadow: var(--spock-shadow);
   }
 
   &__image {
