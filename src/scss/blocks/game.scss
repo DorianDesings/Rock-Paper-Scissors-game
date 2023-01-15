@@ -12,7 +12,12 @@
   border: 20px solid var(--border-color);
   box-shadow: 0 10px var(--shadow), inset 0 10px rgb(0 0% 59% / 0.1);
   background-color: #fff;
+  transition: transform 0.2s;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(0.9);
+  }
 
   &:hover::after {
     @include pseudo(100%, 100%) {
